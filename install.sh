@@ -1,5 +1,11 @@
-FLATPAK=true 
-for arg in "$@"; do case $arg in --no-flatpak) FLATPAK=false shift ;; esac done
+FLATPAK=true
+for arg in "$@"; do 
+    case $arg in 
+        --no-flatpak) 
+            FLATPAK=false 
+            ;; 
+    esac
+done
 
 sudo pacman -S --noconfirm gnome-shell gdm networkmanager \
     gnome-console gnome-control-center gnome-tweaks \
