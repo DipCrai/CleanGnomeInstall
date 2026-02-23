@@ -3,7 +3,20 @@ for arg in "$@"; do
     case $arg in 
         --no-flatpak) 
             FLATPAK=false 
-            ;; 
+            ;;
+        --help)
+            echo "Usage: $0 [options]"
+            echo
+            echo "Options:"
+            echo "  --no-flatpak    Disable installation of Flatpak and GNOME Software."
+            echo "  --help          Show this help message and exit."
+            echo
+            echo "Requirements:"
+            echo "  -This script is intended to be used after a fresh Arch Linux installa tion performed with archinstall."
+            echo "  -Selected profile type of installation must be >Minimal."
+            echo "     *Selecting any other profile may cause package conflicts or duplicate setups."
+            exit 0
+            ;;
     esac
 done
 
