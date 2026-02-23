@@ -10,7 +10,7 @@ When running `archinstall`, make sure to:
 
    \> **Minimal**
 
-This script will install and configure GNOME manually. Selecting any other profile may cause package conflicts or duplicate setups.
+⚠️ This script will install and configure GNOME manually. Selecting any other profile may cause package conflicts or duplicate setups.
 
 ## Packages Installed
 
@@ -32,7 +32,7 @@ The script installs the following packages:
 - flatpak (App manager & repository)
 - gnome-software (App manager)
   
-If you prefer not to use Flatpak or Flathub, you should modify the script before running it.
+⚠️ If you prefer not to use Flatpak or Flathub, you should run the script with `--no-flatpak` flag.
 
 ## To execute post-installation script run
 ```bash
