@@ -22,6 +22,7 @@ The script installs the following packages:
 - gnome-control-center (Settings App)
 - gnome-backgrounds (Default backgrounds)
 - gnome-tweaks (Tweaks App)
+
 ⚠️ If you prefer not to install Gnome Tweaks, you can run the script with `--no-tweaks` flag.
 
 ### System & Networking
