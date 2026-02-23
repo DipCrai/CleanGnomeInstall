@@ -12,6 +12,28 @@ When running `archinstall`, make sure to:
 
 This script will install and configure GNOME manually. Selecting any other profile may cause package conflicts or duplicate setups.
 
+## Packages Installed
+
+The script installs the following packages:
+
+### GNOME Core
+- gnome-shell (Desktop Environment)
+- gnome-console (Console App)
+- gnome-control-center (Settings App)
+- gnome-backgrounds (Default backgrounds)
+- gnome-tweaks (Tweaks App)
+
+### System & Networking
+- networkmanager (Default network manager for GNOME)
+- gdm (Login screen)
+- nano (Console text editor)
+
+### Software Management
+- flatpak (App manager & repository)
+- gnome-software (App manager)
+  
+If you prefer not to use Flatpak or Flathub, you should modify the script before running it.
+
 ## To execute post-installation script run
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/DipCrai/CleanGnomeInstall/refs/heads/main/install.sh)
