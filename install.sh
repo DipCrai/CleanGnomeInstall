@@ -14,10 +14,8 @@ sudo systemctl disable systemd-networkd
 sudo systemctl enable NetworkManager
 sudo systemctl enable gdm
 
-echo "NoDisplay=true" | sudo tee -a /usr/share/applications/avahi-discover.desktop
-echo "NoDisplay=true" | sudo tee -a /usr/share/applications/bssh.desktop
-echo "NoDisplay=true" | sudo tee -a /usr/share/applications/bvnc.desktop
-echo "NoDisplay=true" | sudo tee -a /usr/share/applications/qv4l2.desktop
-echo "NoDisplay=true" | sudo tee -a /usr/share/applications/qvidcap.desktop
+for app in avahi-discover bssh bvnc qv4l2 qvidcap; do
+    echo "NoDisplay=true" | sudo tee -a /usr/share/applications/$app.desktop
+done
 
 sudo reboot
