@@ -17,7 +17,7 @@ for arg in "$@"; do
             echo "  --help          Show this help message and exit."
             echo
             echo "Requirements:"
-            echo "  -This script is intended to be used after a fresh Arch Linux installa tion performed with archinstall."
+            echo "  -This script is intended to be used after a fresh Arch Linux installation performed with archinstall."
             echo "  -Selected profile type of installation must be >Minimal."
             echo "     *Selecting any other profile may cause package conflicts or duplicate setups."
             exit 0
