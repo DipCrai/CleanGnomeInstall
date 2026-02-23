@@ -43,7 +43,12 @@ sudo systemctl enable NetworkManager
 sudo systemctl enable gdm
 
 for app in avahi-discover bssh bvnc qv4l2 qvidcap; do
-    echo "NoDisplay=true" | sudo tee -a /usr/share/applications/$app.desktop
+    original = /usr/share/applications/$app.desktop
+    copy = "$HOME/.local/share/applications/$app.desktop"
+
+    mkdir -p "$(dirname "$copy")"
+    cp "$orig" "$copy"
+    echo "NoDisplay=true" >> "$copy"
 done
 
 sudo reboot
