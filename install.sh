@@ -1,6 +1,6 @@
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-control-center
 sudo pacman -S --noconfirm gnome-backgrounds gnome-tweaks
-sudo pacman -S --noconfirm nano networkmanager
+sudo pacman -S --noconfirm nano networkmanager gdm
 sudo pacman -S --noconfirm flatpak gnome-software
 sudo systemctl disable systemd-networkd
 sudo systemctl enable NetworkManager
